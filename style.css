@@ -1,12 +1,13 @@
 /* page layout style */
 #layout{
     margin: 100px;
+    background-color: khaki;
 }
 
 /* menu underline style */
 #menu ul {
-    padding:80px;
-    margin:80px;
+    padding:10px;
+    margin:2px;
     list-style:none;
     text-align: center;
 }
@@ -25,8 +26,8 @@
 }
 
 /* menu header style */
-#header h1 {
-    margin: 200;
+#header {
+    margin: 200px;
     font-family: Cambria;
     text-align: center;
     color: brown;
