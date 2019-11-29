@@ -1,15 +1,26 @@
 /* page layout style */
-#layout{
-    background-color: khaki;
+*{
     font-family: 'Times New Roman', Times, serif;
+    padding: 100;
+    margin: 0 auto;
+    max-width: 1000;
+}
+
+/* header style */
+header {
+    margin: 0px;
+    width: 100%;
+    background-image: url("images/header-bg.jpg");
+    text-align: center;
+    background-size: 100% 200%;
 }
 
 /* menu underline style */
-#menu ul {
-    padding:10px;
-    margin:2px;
+#menu ul {    
+    padding:6px;
     list-style:none;
     text-align: center;
+    background-color: darkblue;
 }
 
 /* menu item list style */
@@ -19,23 +30,81 @@
 
 /* menu sub-items style */
 #menu ul li a {
-    padding: 2px 20px;
+    padding: 0px 5px;
     display: inline-block;
-    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    color: orangered;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
+
+#home h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 80px 0px 0px 200px;
+    color: orangered;
     font-size: 40px;
+    text-align: left;
 }
 
-/* menu header style */
-#header {
-    margin: 200px;
-    font-family: Cambria;
-    text-align: center;
-    color: brown;
-    border-color: lawngreen;
-    border-width: 30px;
+#content{
+    font-size: 15px;
+    text-align: justify;
+    width: 80%;
 }
 
-#p{
-    border-block-width: 20px;
-    border-color: limegreen;
+/* footer style */
+footer{
+    margin: 0px;
+    width: 100%;
+    /* background-image: url("images/room-computer.jpg"); */
+    background-size: 100% 100%;
+    text-align: left;
+    list-style:none;
+    display: inline-block;
+}
+
+/* footer style */
+footer ul {
+    margin: 0px;
+    width: 100%;
+    background-size: 100% 100%;
+    text-align: left;
+    list-style:none;
+    display: inline-block;
+}
+
+/* footer style */
+footer ul li{
+    margin: 0px;
+    width: 100%;
+    background-size: 100% 100%;
+    text-align: left;
+    list-style:none;
+    display: inline-block;
+}
+
+/* navigation underline style */
+#navigation ul {    
+    padding:0px;
+    list-style:none;
+    text-align: left;
+    padding: 0px 0px 100px 200px;
+    text-align: left;
+}
+
+/* navigation item list style */
+#navigation ul li { 
+    display: inline; 
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+/* navigation sub-items style */
+#navigation ul li a {
+    padding: 0px 0px 0px 600px;
+    display: inline;
+    text-decoration:none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
