@@ -13,25 +13,40 @@
     <!--layout style-->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <!-- subscribe function -->
+    <script class="script/js">
+        var name = document.txtNome.value;
+        var email = document.txtEmail.value;//document.getElementById("txtEmail");
+        console.log(document.txtNome.value);
+        console.log(document.txtEmail.value);
+        function subscribe() {
+            if (email.value == "") {
+                // alert("Campo obrigatório");
+                email.focus();
+                email.style.backgroundColor = "#FF0000"
+            }
+            if (name.value == "") {
+                // alert("Campo obrigatório");
+                name.focus();
+
+                // name.style.backgroundColor = "#FF0000"
+            }
+        }
+    </script>
 </head>
 
 <header>
     <!-- header page -->
-    <div>
-        <div id=home>
-            <h1>Informática Alves</h1>
-            <!-- <h3>Excelência e Qualidade</h3> -->
+    <div id=home>
+        <h1>Informática Alves</h1>
 
-            <nav id="navigation">
-                <ul>
-                    <h3>
-                        <li>Qualidade e Eficiência</li>
-                        <li><a href="index.html">Home</a></li>
-                    </h3>
-                </ul>
-            </nav>
+        <nav id="navigation">
+            <ul>
+                <li>Qualidade e Eficiência</li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
 
-        </div>
     </div>
 
     <!-- header menu navigation -->
@@ -40,8 +55,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Sobre</a></li>
             <li><a href="services.html">Serviços</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="work.html">Trabalhe conosco</a></li>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a href="contributors.html">Parceiros</a></li>
             <li><a href="contact.html">Contato</a></li>
         </ul>
     </nav>
@@ -49,529 +64,227 @@
 
 <body>
     <div id="content">
-        <iframe width="1080" height="480" src="https://www.youtube.com/embed/6d762M7hQYc" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
-        autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
-        aperiam quisquam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet numquam
-        culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit facere
-        enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint asperiores
-        dolores?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
-        facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam illum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
-        molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione magnam.
-
-
-
-
-    </div> -->
+        <div>
+            <iframe width="1080" height="480" src="https://www.youtube.com/embed/6d762M7hQYc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            lorLorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad
+            doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet
+            numquam
+            culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit
+            facere
+            enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint
+            asperiores
+            dolores?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium expedita molestias odit? Labore
+            autem voluptatem voluptatibus. Sapiente, sint ut optio tempora, ducimus autem nobis assumenda tenetur, hic
+            aperiam quisquam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, molestiae saepe. Dolorum quod quis amet
+            numquam
+            culpa, excepturi hic ad enim corporis repellendus dolore soluta. Expedita, vitae. Tempora, recusandae animi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quaerat aliquid, quia totam fugit
+            facere
+            enim pariatur illum voluptatum? Accusantium, nobis. Tenetur praesentium itaque aspernatur sequi sint
+            asperiores
+            dolores?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nemo veniam esse eos et? Ad doloremque
+            facere accusantium cumque dolorem molestias sunt, iste, nisi consectetur natus possimus tempora, veniam
+            illum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error natus labore? Animi alias, quisquam
+            molestias, recusandae nemo non laudantium saepe fugiat, beatae ab fugit voluptate. Alias nisi ratione
+            magnam.
+        </div>
+    </div>
 </body>
 
 <footer>
-    <div id="footer">
-        <ul>
-            <li><h4>Informações</h4></li>
-            <li><strong>E-mail:</strong> atendimento@informaticaalves.com.br</li>
-            <li><strong>Atendimento:</strong> Seg. a Sex. das 8 às 19h</li>
-            <li><strong>Endereço:</strong> Avenida do Café, 151</li>
-            <li><strong>Contato:</strong> Cel: (16) 99169-7336</li>
-        </ul>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    <h3>Apoio</h3>
+                </li>
+                <li><a target="_blank" href="https://www.microsoft.com"><img src="images/microsoft.png" alt=""
+                            width="150px" height="40px"></a> </li>
+                <li><a target="_blank" href="https://canonical.com/"><img src="images/canonical.svg" alt=""
+                            width="150px" height="40px"></a> </li>
+                <li><a target="_blank" href="https://about.google"><img src="images/google.png" alt="" width="150px"
+                            height="40px"></a> </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <h3>Informações</h3>
+                </li>
+                <li><strong>E-mail:</strong> Contato@informatica.com.br</li>
+                <li><strong>Atendimento:</strong> Seg. a Sex. das 8 às 19h</li>
+                <li><strong>Contato:</strong> Cel: (16) 99169-7336</li>
+                <li><strong>Endereço:</strong> Rua João Clapp, 1115, CEP 14085-550 - Campos Elíseos - Ribeirão Preto -
+                    SP - Brasil</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <h3>Newsletter</h3>
+                </li>
+                <li>Receba nossas atualizações em seu email</li>
+                <form id="formSubscribe" action="">
+                    <input id="txtName" type="text" placeholder="Nome" />
+                    <input id="txtEmail" type="text" placeholder="E-mail" />
+                </form>
+                <input id="btnSubscribe" type="button" value="Inscreva-se" onclick="subscribe()" />
+            </ul>
+        </div>
     </div>
 </footer>
 
