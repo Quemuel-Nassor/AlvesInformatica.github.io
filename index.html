@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,25 +14,11 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- subscribe function -->
-    <script class="script/js">
-        var name = document.txtNome.value;
-        var email = document.txtEmail.value;//document.getElementById("txtEmail");
-        console.log(document.txtNome.value);
-        console.log(document.txtEmail.value);
+    <!-- <script class="script/js">
         function subscribe() {
-            if (email.value == "") {
-                // alert("Campo obrigatório");
-                email.focus();
-                email.style.backgroundColor = "#FF0000"
-            }
-            if (name.value == "") {
-                // alert("Campo obrigatório");
-                name.focus();
-
-                // name.style.backgroundColor = "#FF0000"
-            }
+            alert("Inscrição realizada com sucesso!").arguments(Animation);
         }
-    </script>
+    </script> -->
 </head>
 
 <header>
@@ -278,13 +264,15 @@
                     <h3>Newsletter</h3>
                 </li>
                 <li>Receba nossas atualizações em seu email</li>
-                <form id="formSubscribe" action="">
-                    <input id="txtName" type="text" placeholder="Nome" />
-                    <input id="txtEmail" type="text" placeholder="E-mail" />
+                <form id="formSubscribe" method="POST" action="">
+                    <input id="name" type="text"  required name=name placeholder="Nome" />
+                    <input id="email" type="text" required name=email placeholder="E-mail" />
+                    <input id="btnSubscribe"type="submit" value="Inscreva-se">
                 </form>
-                <input id="btnSubscribe" type="button" value="Inscreva-se" onclick="subscribe()" />
+                
             </ul>
         </div>
+
     </div>
 </footer>
 
