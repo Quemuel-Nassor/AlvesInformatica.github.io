@@ -59,6 +59,51 @@ header div h1{
     background-color: white;
 }
 
+#content div ul{
+    list-style: none;
+    /* display: inline; */
+}
+
+#content div ul li{
+    list-style: none;
+    /* display: inline; */
+    width: 50%;
+    float: left;
+}
+
+#content form{
+    padding-bottom: 40px;
+}
+
+#content #contact-form div{
+    font-family: 'Courrier';
+    margin: 5px 5px 0px 5px;
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+#content #contact-form input{
+    font-family: 'Courrier';
+    block-size: 20px;
+    width: 100%;
+}
+
+#content #about{
+    font-size: 25px;
+    color: #565656;
+}
+
+#content div #titles{
+    font-size: 35px;
+    text-align: center;
+    color: tomato;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: rgb(156, 167, 168);
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+}
+
 /* footer style */
 footer {
     margin: 0px;
