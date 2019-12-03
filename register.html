@@ -12,6 +12,7 @@
 
     <!--layout style-->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="validator.js"></script>
 
     <!-- subscribe function -->
     <!-- <script class="script/js">
@@ -24,13 +25,13 @@
 <header>
     <!-- header page -->
     <div id=home>
-        <h1>Apoiador</h1>
+        <h1>Trabalhe conosco</h1>
 
         <nav id="navigation">
             <ul>
-                <li>Tornes-se um apoiador</li>
+                <li>Torne-se um colaborador</li>
                 <li><a href="index.html" style="padding-left: 574px;">Home</a></li>
-                <li>/Apoiador</a></li>
+                <li>/Trabalhe conosco</a></li>
             </ul>
         </nav>
 
@@ -54,8 +55,8 @@
         <div id="form">
             <ul>
                 <li> 
-                        Ficamos felizes em saber que deseja nos Apoiar, informe seus dados do formulário ao lado
-                        e nos diga qual foi a sua motivação para nos apoiar!
+                        Ficamos felizes em saber que deseja conosco, informe seus dados no formulário ao lado
+                        e nos diga qual foi a sua motivação para trabalhar conosco!
                     <br/>
                     <br/>
                     <br/>
@@ -73,9 +74,9 @@
                             <input id="email" type="email" required name=email placeholder="E-mail">
                         </div>
                         <div>
-                            <label for="subject">CNPJ</label>
+                            <label for="subject">Telefone</label>
                             <br />
-                            <input id="subject" type="text" required name=subject placeholder="CNPJ"
+                            <input id="subject" type="text" required name=subject placeholder="Telefone"
                                 aria-required="true">
                         </div>
                         <div>
@@ -83,7 +84,7 @@
                             <br />
                             <textarea id="message" type="text" rows="5" required name=message
                                 placeholder="Motivação"></textarea><br />
-                            <button id="btn" type="submit" id="btnSubmit">Apoiar</button>
+                            <button id="btn" type="submit" id="btnSubmit">Enviar</button>
                         </div>
                     </form>
                 </li>
@@ -130,7 +131,8 @@
                 <form id="formSubscribe" method="POST" action="">
                     <input id="name" type="text"  required name=name placeholder="Nome" />
                     <input id="email" type="text" required name=email placeholder="E-mail" />
-                    <button id="btnSubscribe"type="submit" action="JavaScriptVoid(0)">Inscreva-se</button>
+                    <!-- <button id="btnSubscribe"type="submit" action="subscribe()">Inscreva-se</button> -->
+                    <input id="btnSubscribe"type="button" onclick="subscribe()">Inscreva-se</input>
                 </form>
                 
             </ul>
