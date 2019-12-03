@@ -24,13 +24,13 @@
 <header>
     <!-- header page -->
     <div id=home>
-        <h1>Produtos</h1>
+        <h1>Apoiador</h1>
 
         <nav id="navigation">
             <ul>
-                <li>Conheça nossos produtos</li>
-                <li><a href="index.html" style="padding-left: 553px;">Home</a></li>
-                <li>/Produtos</li>
+                <li>Tornes-se um apoiador</li>
+                <li><a href="index.html" style="padding-left: 574px;">Home</a></li>
+                <li>/Apoiador</a></li>
             </ul>
         </nav>
 
@@ -50,61 +50,44 @@
 </header>
 
 <body>
-    <div id="content-1">
-        <div >
-            <div id="produto">
-                <ul>
-                    <li>
-                        <div id="titles">Desktops</div>
-                        <img src="images/desktop2.jpg" alt="">
+<div id="content">
+        <div id="form">
+            <ul>
+                <li> 
+                        Ficamos felizes em saber que deseja nos Apoiar, informe seus dados do formulário ao lado
+                        e nos diga qual foi a sua motivação para nos apoiar!
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <form id="contact-form" action="" method="post">
                         <div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nobis, praesentium
-                            asperiores
-                            eius molestias amet debitis necessitatibus neque dolorum officia aspernatur velit quo sit
-                            sapiente officiis unde nostrum itaque adipisci.
+                            <label for="name">Nome</label>
+                            <br />
+                            <input id="name" type="text" required name=name placeholder="Nome">
                         </div>
-                    </li>
-                    <li>
-                        <div id="titles">Impressoras</div>
-                        <img src="images/impressora.jpg" alt="">
                         <div>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, doloribus. Nesciunt quia
-                            perspiciatis repellendus possimus tempore consequatur quos adipisci! Commodi officia aliquid
-                            aperiam eos in. Obcaecati mollitia iusto eaque ratione!
+                            <label for="email">E-mail</label>
+                            <br />
+                            <input id="email" type="email" required name=email placeholder="E-mail">
                         </div>
-                    </li>
-                    <li>
-                        <div id="titles">Notebooks</div>
-                        <img src="images/notebook.jpg" alt="">
                         <div>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio, asperiores
-                            reprehenderit,
-                            officia nam quidem rerum voluptatibus et consectetur quia ut! Aspernatur, delectus at
-                            laudantium
-                            reiciendis voluptates nostrum similique cupiditate.
+                            <label for="subject">CNPJ</label>
+                            <br />
+                            <input id="subject" type="text" required name=subject placeholder="CNPJ"
+                                aria-required="true">
                         </div>
-                    </li>
-                    <li>
-                        <div id="titles">Coolers</div>
-                        <img src="images/cooler.jpg" alt="">
                         <div>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa cum dolor deserunt laudantium
-                            aliquid illo reiciendis quis aperiam maxime. Praesentium reiciendis dolores vel illo cum
-                            distinctio ipsam odio in quis?
+                            <label for="message">Motivação</label>
+                            <br />
+                            <textarea id="message" type="text" rows="5" required name=message
+                                placeholder="Motivação"></textarea><br />
+                            <button id="btn" type="submit" id="btnSubmit">Apoiar</button>
                         </div>
-                    </li>
-                    <li>
-                        <div id="titles">Componentes</div>
-                        <img src="images/placa-video.jpg" alt="">
-                        <div>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nihil modi, voluptatem nam
-                            est
-                            dolore quam? Adipisci eaque sit, iusto necessitatibus temporibus dolores deleniti nulla
-                            exercitationem error. Quaerat, molestias blanditiis?
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                    </form>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
@@ -145,11 +128,11 @@
                 </li>
                 <li>Receba nossas atualizações em seu email</li>
                 <form id="formSubscribe" method="POST" action="">
-                    <input id="name" type="text" required name=name placeholder="Nome" />
+                    <input id="name" type="text"  required name=name placeholder="Nome" />
                     <input id="email" type="text" required name=email placeholder="E-mail" />
-                    <input id="btnSubscribe" type="submit" value="Inscreva-se" action="JavaScriptVoid(0)">
+                    <button id="btnSubscribe"type="submit" action="JavaScriptVoid(0)">Inscreva-se</button>
                 </form>
-
+                
             </ul>
         </div>
 
